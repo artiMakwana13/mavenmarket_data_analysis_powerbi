@@ -55,20 +55,20 @@ A Star Schema was implemented with:
 ---
 
 #### Key DAX Measures  
-Total_Revenue = SUMX(Transaction_Data, Transaction_Data[quantity] * RELATED(Products[product_retail_price]))
-Total_Cost = SUMX(Transaction_Data, Transaction_Data[quantity] * RELATED(Products[product_cost]))
-Total_Profit = [Total_Revenue] - [Total_Cost]
-Profit_margin = DIVIDE([Total_Profit], [Total_Revenue])
-Return_Rate = [Total_Quantity_Returned] / [Total_Quantity_Sold]
-Last_Month_Revenue = CALCULATE([Total_Revenue], DATEADD('Calendar'[date],-1,MONTH))
-Revenue_Target = [Last_Month_Revenue] * 1.05
-YTD Revenue = YTD_Revenue = CALCULATE([Total_Revenue], DATESYTD('Calendar'[date])) 
-Weekend Transactions = CALCULATE([Total Transactions], 'Calendar'[Weekend] = "Y")
-% Weekend Transactions = DIVIDE([Weekend Transactions], [Total Transactions])
+- Total_Revenue = SUMX(Transaction_Data, Transaction_Data[quantity] * RELATED(Products[product_retail_price]))
+- Total_Cost = SUMX(Transaction_Data, Transaction_Data[quantity] * RELATED(Products[product_cost]))
+- Total_Profit = [Total_Revenue] - [Total_Cost]
+- Profit_margin = DIVIDE([Total_Profit], [Total_Revenue])
+- Return_Rate = [Total_Quantity_Returned] / [Total_Quantity_Sold]
+- Last_Month_Revenue = CALCULATE([Total_Revenue], DATEADD('Calendar'[date],-1,MONTH))
+- Revenue_Target = [Last_Month_Revenue] * 1.05
+- YTD Revenue = YTD_Revenue = CALCULATE([Total_Revenue], DATESYTD('Calendar'[date])) 
+- Weekend Transactions = CALCULATE([Total Transactions], 'Calendar'[Weekend] = "Y")
+- % Weekend Transactions = DIVIDE([Weekend Transactions], [Total Transactions])
 
 ---
 
-#### Dashboard Development (Power BI)  
+### Dashboard Development (Power BI)  
 - Designed an interactive dashboard highlighting:
   - Map: Total Revenue by Country
   - Treemap: Transactions by Store Hierarchy (Country → State → City)
