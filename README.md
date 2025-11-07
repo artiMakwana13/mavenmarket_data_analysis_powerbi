@@ -90,6 +90,6 @@ A Star Schema was implemented with:
 
 ---
 
-![Power BI Dashboard Preview](.mavenmarket_reports.pdf)  
+![Power BI Dashboard Preview](mavenmarket_reports.pdf)  
   
 ---
