@@ -2,8 +2,7 @@
 
 
 ## Overview  
-This project showcases an end-to-end retail data analysis solution for Maven Market, built in Power BI.  
-It includes data cleaning, data modeling, and business analysis, transforming raw data into a dynamic dashboard for data-driven insights.  
+Maven Market, a multinational grocery chain operating across Canada, Mexico, and the United States, lacks a unified, data-driven view of its sales, profitability, and operational performance. Due to fragmented data across regions and limited analytical insights, management struggles to identify key revenue drivers, underperforming products, and market trends, making it difficult to optimize decision-making and improve overall business performance. So this interactive Power BI dashboard analyze transactions, revenue, profit, return rates, performance by country, and brand-level metrics along with weekly revenue trends and target tracking.
 
 ---
 
